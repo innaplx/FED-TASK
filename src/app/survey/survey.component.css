@@ -1,0 +1,192 @@
+.survey, .survey-2, .survey-3{
+    display: grid;
+    max-width: 1065px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.first, .secound, .third{
+    background-color: #7fc555;
+    text-align: left;
+    padding: 2.5rem;
+}
+p{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+    display: block;
+}
+.answer{
+    height: 2rem;
+    width: 33%;
+    background-color: #065d39;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.rest{
+    height: 2rem;
+    width: 67%;
+    background-color: #73b34d;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.secound-answer{
+    height: 2rem;
+    width: 67%;
+    background-color: #065d39;
+    display: inline-block;
+    padding-bottom: 2rem;
+}
+.third-answer{
+    height: 2rem;
+    width: 100%;
+    background-color: #065d39;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.secound-rest{
+    height: 2rem;
+    width: 33%;
+    background-color: #73b34d;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.first-quastion, .secound-quastion, .third-quastion, span{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+input{
+    display: none;
+}
+.Q1{
+    display: inline-block;
+    width: 100%;
+    background-color: #00afda;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 50px;
+}
+.Q2{
+    display: inline-block;
+    width: 100%;
+    background-color: #7d4398;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.Q3{
+    display: inline-block;
+    width: 100%;
+    background-color: #f17f29;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-left: 50px;
+}
+span{
+    font-size: 0.8rem;
+}
+.third .Q1{
+    font-size: 1.6rem; 
+    padding: 10px 0px 10px 0px;
+}
+.third .Q2{
+    font-size: 1.6rem; 
+    padding: 10px 0px 10px 0px;
+}
+.third .Q3{
+    font-size: 1.6rem; 
+    padding: 10px 0px 10px 0px;
+}
+.fourth{
+    width: 1065px;
+    height: 430px;
+    display: inline-block;
+    background-color: #7fc555;
+    font-size: 1.6rem;
+    color: white;
+    padding-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.progress{
+    background-color: #73b34d;
+    width: 600px;
+    margin: auto;
+}
+.progress span
+    {background-color:#065d39;
+    height: 30px;
+    display: block;
+    animation: prog 2s linear forwards}
+    @keyframes prog{
+        0%{width:0%}
+        100%{width:100%;background-color:#065d39}
+}
+
+@media screen and (max-width: 320px) {
+    .survey, .survey-2, .survey-3 {
+     display: grid;
+     grid-template-columns: 1fr; 
+     width: 100%;
+     padding-top:10px;
+     padding-bottom: 0px;
+    }
+    .first, .secound, .third{
+        padding: 6px;
+    }
+    p{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    .answer, .rest, .secound-answer,.third-answer,.secound-rest{
+        height: 13px;
+        padding-bottom: 10px;
+    }
+    .first-quastion, .secound-quastion, .third-quastion, span{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .Q1{
+        margin-top: 7px;
+    }
+    .fourth{
+        width: 320px;
+        display: inline-block;
+        font-size:24px;
+        padding-top: 150px;
+        margin-top:10px;
+    }
+    .progress{
+        width: 280px;
+        height: 15px;
+    }
+    .progress span{
+        width: 280px;
+        height: 15px;
+    }
+    .third .Q1{
+        font-size: 18px; 
+    }
+    .third .Q2{
+        font-size: 18px; 
+    }
+    .third .Q3{
+        font-size: 18px; 
+    }
+} 
+@media screen and (min-width:321px) {
+    .hidden_desktop {
+        display:none;
+    }
+}
+@media screen and (max-width:320px) {
+    .hidden_mobile {
+        display:none;
+    }
+}
+  

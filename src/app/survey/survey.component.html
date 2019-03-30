@@ -1,0 +1,92 @@
+<!-- first -->
+<div *ngIf="questionOne" class="survey">
+  <div class="pic">
+    <img class="hidden_mobile" src="/assets/images/pic_1.png" />
+    <img class="hidden_desktop" src="/assets/images/pic_1_m.png" />
+  </div>
+  <div class="first">
+    <div class="bar">
+      <p>Answer these 3 questions to see if you qualify:</p>
+      <div class="answer"></div>
+      <div class="rest"></div>
+    </div>
+    <div class="first-quastion">
+      How many times a week you shop at the supermarket?
+      <label (click)="submitQuestionOne()" class="Q1">
+        <input type="checkbox" value="1"><span>up to</span> 1
+      </label>
+      <label (click)="submitQuestionOne()" class="Q2">
+        <input type="checkbox" value="2"> 2
+      </label>
+      <label (click)="submitQuestionOne()" class="Q3">
+        <input type="checkbox" value="3">3<span>or more</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- secound -->
+<div *ngIf="questionTwo" class="survey-2">
+  <div class="pic">
+    <img class="hidden_mobile" src="/assets/images/pic_2.png" />
+    <img class="hidden_desktop" src="/assets/images/pic_2_m.png" />
+  </div>
+  <div class="secound">
+    <div class="bar">
+      <p>Answer these 3 questions to see if you qualify:</p>
+      <div class="secound-answer"></div>
+      <div class="secound-rest"></div>
+    </div>
+    <div class="secound-quastion">
+      How much money do you <br>spend a week?
+      <label (click)="submitQuestionTwo()" class="Q1">
+        <input type="checkbox" value="1"><span>up to</span> $100
+      </label>
+      <label (click)="submitQuestionTwo()" class="Q2">
+        <input type="checkbox" value="2"> $200
+      </label>
+      <label (click)="submitQuestionTwo()" class="Q3">
+        <input type="checkbox" value="3">$300<span>or more</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- third -->
+<div *ngIf="questionThree" class="survey-3">
+  <div class="pic">
+    <img class="hidden_mobile" src="/assets/images/pic_3.png" />
+    <img class="hidden_desktop" src="/assets/images/pic_3_m.png" />
+  </div>
+  <div class="third">
+    <div class="bar">
+      <p>Answer these 3 questions to see if you qualify:</p>
+      <div class="third-answer"></div>
+    </div>
+    <div class="third-quastion">
+      <br>
+      What do you buy the most?
+      <label (click)="submitQuestionThree()" class="Q1">
+        <input type="checkbox" value="1">Dairy Products
+      </label>
+      <label (click)="submitQuestionThree()" class="Q2">
+        <input type="checkbox" value="2">Meat Products
+      </label>
+      <label (click)="submitQuestionThree()" class="Q3">
+        <input type="checkbox" value="3">Vegetables & Fruits
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- fourth -->
+<div *ngIf="questionFour" class="survey-4">
+  <div class="fourth">
+    Calculating your answers...
+    <br>
+    <div class="progress">
+      <span></span>
+    </div>
+  </div>
+
+</div>
